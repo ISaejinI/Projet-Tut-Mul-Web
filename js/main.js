@@ -1,16 +1,17 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
 
-    const vrSections = gsap.utils.toArray('.vr');
-    gsap.from(vrSections, {
-        yPercent: -100 * (vrSections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".verticalReverse",
-          pin: true,
-          scrub: 1,
-          end: "300%",
-          markers: true
-        }
-    });
+  let sections = gsap.utils.toArray(".vr");
+
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".wrapper",
+      pin: true,
+      scrub: 1,
+      snap: 1 / (sections.length - 1),
+      end: () => "+=" + document.querySelector(".wrapper").offsetWidth
+    }
+  });
 });

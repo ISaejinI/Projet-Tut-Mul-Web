@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     font-style: normal;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .exo2 {
@@ -52,11 +53,13 @@ body {
 }
 
 .wrapper {
-    flex-direction: column-reverse;
-    width: 100%;
+    display: flex; /* Passe la direction en ligne (horizontale) */
+    flex-direction: row; /* Changer la direction des items en ligne */
+    width: 300vw; /* Largeur de 3 fois la largeur de la fenêtre (1 pour chaque div) */
+    height: 100vh;
 }
 
 .verticalReverse {
-    overflow: hidden;
     max-height: 100vh;
+    width: 100vw; 
 }
