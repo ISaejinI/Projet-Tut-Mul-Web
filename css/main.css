@@ -7,6 +7,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
 }
 
 .exo2 {
@@ -21,4 +22,41 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.hfull {
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50% -50%);
+    z-index: 10;
+}
+
+.wrapper {
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.verticalReverse {
+    overflow: hidden;
+    max-height: 100vh;
 }

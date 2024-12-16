@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système solaire</title>
+
+    <!-- Import des librairies d'animation -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    
+    <!-- Import du style et du JS -->
+
     <script src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-    <title>Système solaire</title>
-</head>
-<body>
     
+</head>
+<body id="body">
+    <div class="verticalReverse">
+        <div class="flex wrapper">
+            <div class="vr hfull flex red">
+                <p>Div 1</p>
+            </div>
+            <div class="vr hfull flex purple">
+                <p>Div 2</p>
+            </div>
+            <div class="vr h hfull flex red">
+                <p>Div 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="horizontal">
+        <div class="h hfull flex purple">
+            <p>Div 4</p>
+        </div>
+        <div class="h hfull flex red">
+            <p>Div 5</p>
+        </div>
+    </div>
 </body>
 </html>
