@@ -66,3 +66,17 @@ body {
 #tesla {
     background-image: linear-gradient(to top,#018abe, #02457a);
 }
+
+#soleil {
+    background-image: linear-gradient(to top,#018abe, #02457a);
+    position: relative;
+    img {
+        width: 350px;
+    };
+    div {
+        position: absolute;
+        bottom: 100px;
+        right: 150px;
+        width: 350px;
+    }
+}
