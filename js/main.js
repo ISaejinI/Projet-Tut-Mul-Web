@@ -14,4 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       end: () => "+=" + document.querySelector(".wrapper").offsetWidth
     }
   });
+
+  gsap.to()
 });

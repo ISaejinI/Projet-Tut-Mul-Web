@@ -36,30 +36,83 @@ body {
     justify-content: center;
 }
 
-.red {
-    background-color: red;
+.solstatic {
+    background-color: #d6e8ee;
 }
 
-.purple {
-    background-color: purple;
+.sol {
+    background-image: linear-gradient(to right, #d6e8ee, #97cadb);
 }
 
-.fixed {
-    position: fixed;
-    bottom: 0;
-    right: 50%;
-    transform: translate(50% -50%);
-    z-index: 10;
+.ciel {
+    background-image: linear-gradient(to right, #97cadb, #018abe);
+}
+
+.tesla {
+    background-image: linear-gradient(to right, #018abe, #02457a);
+}
+
+.espace {
+    background-image: linear-gradient(to right, #02457a, #001b48);
+}
+
+.soleil {
+    background-color: #001b48;
 }
 
 .wrapper {
-    display: flex; /* Passe la direction en ligne (horizontale) */
-    flex-direction: row; /* Changer la direction des items en ligne */
-    width: 300vw; /* Largeur de 3 fois la largeur de la fenêtre (1 pour chaque div) */
+    display: flex;
+    /* Passe la direction en ligne (horizontale) */
+    flex-direction: row;
+    /* Changer la direction des items en ligne */
+    width: 700vw;
+    /* Largeur de 3 fois la largeur de la fenêtre (1 pour chaque div) */
     height: 100vh;
 }
 
 .verticalReverse {
     max-height: 100vh;
-    width: 100vw; 
+    width: 100vw;
+}
+
+.fusee {
+    width: 40%;
+    position: fixed;
+    top: 50%;
+    left: -180px;
+    transform: translateY(-50%) rotate(90deg);
+    z-index: 10;
+}
+
+.count {
+    font-size: 10rem;
+    position: relative;
+}
+
+.count::before {
+    content: "3";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: countdown 3s steps(1) forwards;
+}
+
+@keyframes countdown {
+    0% {
+        content: "3";
+    }
+    33.33% {
+        content: "2";
+    }
+    66.66% {
+        content: "1";
+    }
+    100% {
+        content: "0";
+    }
 }
