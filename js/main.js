@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
           trigger: ".verticalReverse",
           pin: true,
           scrub: 1,
-          end: "300%",
+          start: "top top",
+          end: "bottom top",
           markers: true
         }
     });
