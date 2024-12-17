@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: '#ciel',
       // markers: true,
       start: () => {
-        const screenHeightTimesThree = window.innerHeight * 1;
+        const screenHeightTimesThree = window.innerHeight * 1.2;
         return `${screenHeightTimesThree}px top`;
       }
     }
@@ -52,14 +52,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const nuageTl2 = gsap.timeline({
     scrollTrigger: {
       trigger: '#ciel',
-      markers: true,
+      // markers: true,
       start: () => {
-        const screenHeightTimesThree = window.innerHeight * 1;
+        const screenHeightTimesThree = window.innerHeight * 1.2;
         return `${screenHeightTimesThree}px top`;
       }
     }
   });
 
   nuageTl2.fromTo('#nuageRight', { x: 0 }, { x: 200 })
+
+  // Oiseaux quand on arrive au ciel
+
+  const oiseauxTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#ciel',
+      markers: true,
+      start: () => {
+        const screenHeightTimesThree = window.innerHeight * 1.2;
+        return `${screenHeightTimesThree}px top`;
+      }
+    }
+  });
+
+  oiseauxTl.fromTo('#oiseaux', {  x: -1200, y: 400 }, {duration: 2, x: 1500, y: -400 })
 
 });
