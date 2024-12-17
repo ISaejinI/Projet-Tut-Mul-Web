@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,65 @@
 
     <!-- Import des librairies d'animation -->
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-    
+
     <!-- Import du style et du JS -->
 
     <script src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-    
+
 </head>
+
 <body id="body">
     <div class="verticalReverse">
         <div class="wrapper">
             <img id="fusee" src="./src/img/fuseePlain.svg" alt="fusée">
-            <div class="section" style="background-color: aqua;">
-                <p id="nb3" class="number">3</p>
-                <p id="nb2" class="number" style="display: none;">2</p>
-                <p id="nb1" class="number" style="display: none;">1</p>
-                <p id="nb0" class="number" style="display: none;">0</p>
+            <div id="sol" class="section">
+                <img id="town" src="./src/img/ville.svg" alt="town background">
+
+                <div id="numberContainer">
+                    <p id="nb3" class="number">3</p>
+                    <p id="nb2" class="number" style="display: none;">2</p>
+                    <p id="nb1" class="number" style="display: none;">1</p>
+                    <p id="nb0" class="number" style="display: none;">0</p>
+                </div>
+
+                <div class="textContainer">
+                    <h1 class="exo2">Bienvenue à bord de notre fusée !</h1>
+                    <p>Embarquez pour un voyage à la découverte des mystères fascinants des planètes du système solaire.
+                        De la géante gazeuse Jupiter à la petite Mercure brûlante, en passant par les anneaux majestueux
+                        de Saturne, chaque planète a son histoire à raconter. 
+                    </p>
+                    <button id="launchButton">C'est parti !</button>
+                </div>
+
+                <img id="smoke" src="./src/img/smoke1.svg">
+            </div>
+            <div id="ciel" class="section" style="background-color: lawngreen;">
+
+            </div>
+            <div id="tesla" class="section" style="background-color: lawngreen;">
+
             </div>
             <div id="soleil" class="section" style="background-color: red;">
                 <img src="./src/img/soleil.svg" alt="soleil">
                 <div>
-                    <p>Le Soleil est l’étoile au cœur de notre système solaire. C’est une énorme boule de gaz brûlant, principalement de l’hydrogène et de l’hélium. Sa chaleur et sa lumière rendent la vie possible sur Terre. Il est si grand qu’on pourrait mettre plus d’un million de Terres à l’intérieur ! Le Soleil est en fait une immense centrale nucléaire qui produit de l’énergie grâce à un processus appelé fusion. Sans lui, il n’y aurait ni lumière, ni chaleur, ni vie.</p>
+                    <p>Le Soleil est l’étoile au cœur de notre système solaire. C’est une énorme boule de gaz brûlant,
+                        principalement de l’hydrogène et de l’hélium. Sa chaleur et sa lumière rendent la vie possible
+                        sur Terre. Il est si grand qu’on pourrait mettre plus d’un million de Terres à l’intérieur ! Le
+                        Soleil est en fait une immense centrale nucléaire qui produit de l’énergie grâce à un processus
+                        appelé fusion. Sans lui, il n’y aurait ni lumière, ni chaleur, ni vie.</p>
                 </div>
             </div>
             <div class="section" style="background-color: lawngreen;">
-                
-            </div>
-            <div class="section" style="background-color: lawngreen;">
-                
-            </div>
-            <div class="section" style="background-color: lawngreen;">
-                
+
             </div>
         </div>
     </div>
 </body>
+
 </html>
