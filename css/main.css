@@ -42,6 +42,9 @@ body {
 
 .ciel {
     background-image: linear-gradient(to right, #97cadb, #018abe);
+    display: flex;
+    align-items: center;
+    padding-bottom: 200px;
 }
 
 .tesla {
@@ -53,16 +56,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .soleildiv{
+
+    .soleildiv {
         width: 40%;
     }
 }
@@ -72,16 +78,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .mercurediv{
+
+    .mercurediv {
         width: 40%;
     }
 }
@@ -91,16 +100,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .venusdiv{
+
+    .venusdiv {
         width: 40%;
     }
 }
@@ -110,16 +122,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .terrediv{
+
+    .terrediv {
         width: 40%;
     }
 }
@@ -129,16 +144,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .lunediv{
+
+    .lunediv {
         width: 40%;
     }
 }
@@ -148,16 +166,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .marsdiv{
+
+    .marsdiv {
         width: 40%;
     }
 }
@@ -167,16 +188,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .jupiterdiv{
+
+    .jupiterdiv {
         width: 40%;
     }
 }
@@ -186,16 +210,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .saturnediv{
+
+    .saturnediv {
         width: 40%;
     }
 }
@@ -205,16 +232,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .uranusdiv{
+
+    .uranusdiv {
         width: 40%;
     }
 }
@@ -224,16 +254,19 @@ body {
     color: white;
     gap: 10%;
     overflow: hidden;
-    .fondetoile{
+
+    .fondetoile {
         position: fixed;
         width: 150%;
         height: 150%;
         z-index: -1;
     }
-    .planete{
+
+    .planete {
         width: 30%;
     }
-    .neptunediv{
+
+    .neptunediv {
         width: 40%;
     }
 }
@@ -285,21 +318,25 @@ body {
     0% {
         content: "3";
     }
+
     33.33% {
         content: "2";
     }
+
     66.66% {
         content: "1";
     }
+
     100% {
         content: "0";
     }
 }
 
-.nuage{
-    width: 20%;
+.nuage {
+    width: 40%;
+    top: 0;
 }
 
-.txtend{
+.txtend {
     text-align: end;
 }

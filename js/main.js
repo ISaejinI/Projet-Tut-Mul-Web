@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
       y: 300
   });
 
-// Nuage quand on arrive au ciel
-  const nuageTl = gsap.timeline({scrollTrigger: {
+// Nuage Gauche quand on arrive au ciel
+  const nuageTl1 = gsap.timeline({scrollTrigger: {
     trigger: '.ciel',
     markers: true,
     start: () => {
@@ -51,5 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }});
 
-  nuageTl.fromTo('.nuage', {y:0}, {y:200})
+  nuageTl1.fromTo('.nuageleft', {x:0}, {x:-200})
+
+// Nuage Gauche quand on arrive au ciel
+const nuageTl2 = gsap.timeline({scrollTrigger: {
+  trigger: '.ciel',
+  markers: true,
+  start: () => {
+    const screenHeightTimesThree = window.innerWidth * 1;
+    return `${screenHeightTimesThree}px top`;
+  }
+}});
+
+nuageTl2.fromTo('.nuageright', {x:0}, {x:200})
 });
