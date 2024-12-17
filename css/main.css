@@ -340,3 +340,20 @@ body {
 .txtend {
     text-align: end;
 }
+
+.teslavoiture{
+    width: 30%;
+    margin-right: 200px;
+}
+
+.tesla{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10%;
+    p{
+        width: 30%;
+        margin-right: 200px;
+        color: white;
+    }
+}
