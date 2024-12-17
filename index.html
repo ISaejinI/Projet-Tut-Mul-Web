@@ -10,6 +10,7 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
@@ -25,6 +26,9 @@
     <div class="verticalReverse">
         <div class="wrapper">
             <img id="fusee" src="./src/img/fuseePlain.svg" alt="fusée">
+            <dotlottie-player id="fuseeFeu" src="https://lottie.host/eb924371-600b-4dcf-8b4b-1769aa7d4da3/5N1xvNSJ3S.lottie"
+                background="transparent" speed="1" loop
+                autoplay></dotlottie-player>
             <div id="sol" class="section">
                 <img id="town" src="./src/img/ville.svg" alt="town background">
 
@@ -39,20 +43,20 @@
                     <h1 class="exo2">Bienvenue à bord de notre fusée !</h1>
                     <p>Embarquez pour un voyage à la découverte des mystères fascinants des planètes du système solaire.
                         De la géante gazeuse Jupiter à la petite Mercure brûlante, en passant par les anneaux majestueux
-                        de Saturne, chaque planète a son histoire à raconter. 
+                        de Saturne, chaque planète a son histoire à raconter.
                     </p>
                     <button id="launchButton">C'est parti !</button>
                 </div>
 
-                <img id="smoke" src="./src/img/smoke1.svg">
+                <img id="smoke" src="">
             </div>
-            <div id="ciel" class="section" style="background-color: lawngreen;">
+            <div id="ciel" class="section">
 
             </div>
-            <div id="tesla" class="section" style="background-color: lawngreen;">
+            <div id="tesla" class="section">
 
             </div>
-            <div id="soleil" class="section" style="background-color: red;">
+            <div id="soleil" class="section">
                 <img src="./src/img/soleil.svg" alt="soleil">
                 <div>
                     <p>Le Soleil est l’étoile au cœur de notre système solaire. C’est une énorme boule de gaz brûlant,

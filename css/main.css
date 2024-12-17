@@ -40,6 +40,18 @@ body {
     transform: translate(50%);
     z-index: 10;
     height: 350px;
+    opacity: 1;
+}
+
+#fuseeFeu {
+    position: fixed;
+    bottom: -50px;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 11;
+    height: 450px;
+    width: 300px;
+    opacity: 0;
 }
 
 .verticalReverse {
@@ -91,7 +103,7 @@ body {
         text-align: center;
         border-radius: 25px;
         position: absolute;
-        bottom: 60%;
+        top: 5%;
         left: 50%;
         transform: translate(-50%, 50%);
     }
@@ -104,10 +116,26 @@ body {
     }
 
     #launchButton {
-        padding: 6px 12px;
+        padding: 15px 35px;
         background-color: var(--jaune);
-        border: 0;
-        cursor: pointer;
+        border: 1px solid var(--noir);
+        border-radius: 50px;
+        color: var(--noir);
+        font-size: 20px;
+        text-decoration: none;
+        box-shadow: 0 0 0;
+        transition: all 200ms;
+        cursor: pointer; 
+    }
+    
+    #launchButton:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 12px 1px var(--noir);
+    }
+
+    #launchButton:active {
+        transform: translateY(10px);
+        box-shadow: 0 0 0;
     }
 
     #smoke {
