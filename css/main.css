@@ -37,10 +37,6 @@ body {
 }
 
 .solstatic {
-    background-color: #d6e8ee;
-}
-
-.sol {
     background-image: linear-gradient(to right, #d6e8ee, #97cadb);
 }
 
@@ -49,15 +45,197 @@ body {
 }
 
 .tesla {
-    background-image: linear-gradient(to right, #018abe, #02457a);
-}
-
-.espace {
-    background-image: linear-gradient(to right, #02457a, #001b48);
+    background-image: linear-gradient(to right, #018abe, #001b48);
 }
 
 .soleil {
     background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .soleildiv{
+        width: 40%;
+    }
+}
+
+.mercure {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .mercurediv{
+        width: 40%;
+    }
+}
+
+.venus {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .venusdiv{
+        width: 40%;
+    }
+}
+
+.terre {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .terrediv{
+        width: 40%;
+    }
+}
+
+.lune {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .lunediv{
+        width: 40%;
+    }
+}
+
+.mars {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .marsdiv{
+        width: 40%;
+    }
+}
+
+.jupiter {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .jupiterdiv{
+        width: 40%;
+    }
+}
+
+.saturne {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .saturnediv{
+        width: 40%;
+    }
+}
+
+.uranus {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .uranusdiv{
+        width: 40%;
+    }
+}
+
+.neptune {
+    background-color: #001b48;
+    color: white;
+    gap: 10%;
+    overflow: hidden;
+    .fondetoile{
+        position: fixed;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+    }
+    .planete{
+        width: 30%;
+    }
+    .neptunediv{
+        width: 40%;
+    }
 }
 
 .wrapper {
@@ -65,7 +243,7 @@ body {
     /* Passe la direction en ligne (horizontale) */
     flex-direction: row;
     /* Changer la direction des items en ligne */
-    width: 700vw;
+    width: 1300vw;
     /* Largeur de 3 fois la largeur de la fenêtre (1 pour chaque div) */
     height: 100vh;
 }
@@ -75,12 +253,13 @@ body {
     width: 100vw;
 }
 
-.fusee {
+#fusee {
     width: 40%;
     position: fixed;
     top: 50%;
     left: -180px;
-    transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%);
+    transform: rotate(90deg);
     z-index: 10;
 }
 
@@ -115,4 +294,12 @@ body {
     100% {
         content: "0";
     }
+}
+
+.nuage{
+    width: 20%;
+}
+
+.txtend{
+    text-align: end;
 }
