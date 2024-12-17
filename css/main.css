@@ -91,10 +91,6 @@ body {
     position: relative;
     justify-content: flex-start;
 
-    .textContainer {
-        margin-left: 150px;
-    }
-
     #numberContainer {
         background: grey;
         padding: 6px 0;
@@ -125,9 +121,9 @@ body {
         text-decoration: none;
         box-shadow: 0 0 0;
         transition: all 200ms;
-        cursor: pointer; 
+        cursor: pointer;
     }
-    
+
     #launchButton:hover {
         transform: translateY(-10px);
         box-shadow: 0px 12px 1px var(--noir);
@@ -150,7 +146,8 @@ body {
 
 #ciel {
     background-image: linear-gradient(to top, #97cadb, #018abe);
-    #oiseaux{
+
+    #oiseaux {
         width: 500px;
         height: 500px;
         position: fixed;
@@ -164,29 +161,64 @@ body {
     flex-direction: column;
     align-items: end;
     gap: 10%;
-    #teslavoiture{
+
+    #teslavoiture {
         width: 30%;
         height: 300px;
         margin-right: 200px;
     }
-    p{
-        width: 30%;
-        margin-right: 200px;
-        color: white;
-    }
 }
 
-#soleil {
-    background-image: linear-gradient(to top, #018abe, #02457a);
+.txtR {
+    margin-right: 150px;
+}
+
+.txtL {
+    margin-left: 150px;
+}
+
+.planet {
+    width: 600px;
+}
+
+.plCont {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(to top, #02457a, #018abe);
 
-    img {
-        width: 350px;
-    }
+    .textContainer {
+        color: var(--blanc);
 
-    div {
-        width: 350px;
+        h2 {
+            color: var(--jaune);
+            font-size: 50px;
+            margin-top: 0;
+        }
     }
+}
+
+.plContOdd {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, #018abe, #02457a);
+
+    .textContainer {
+        color: var(--blanc);
+
+        h2 {
+            color: var(--jaune);
+            font-size: 50px;
+            margin-top: 0;
+        }
+    }
+}
+
+.bgStars {
+    position: fixed;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
 }

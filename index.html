@@ -26,9 +26,9 @@
     <div class="verticalReverse">
         <div class="wrapper">
             <img id="fusee" src="./src/img/fuseePlain.svg" alt="fusée">
-            <dotlottie-player id="fuseeFeu" src="https://lottie.host/eb924371-600b-4dcf-8b4b-1769aa7d4da3/5N1xvNSJ3S.lottie"
-                background="transparent" speed="1" loop
-                autoplay></dotlottie-player>
+            <dotlottie-player id="fuseeFeu"
+                src="https://lottie.host/eb924371-600b-4dcf-8b4b-1769aa7d4da3/5N1xvNSJ3S.lottie"
+                background="transparent" speed="1" loop autoplay></dotlottie-player>
             <div id="sol" class="section">
                 <img id="town" src="./src/img/ville.svg" alt="town background">
 
@@ -39,7 +39,7 @@
                     <p id="nb0" class="number" style="display: none;">0</p>
                 </div>
 
-                <div class="textContainer">
+                <div class="textContainer txtL">
                     <h1 class="exo2">Bienvenue à bord de notre fusée !</h1>
                     <p>Embarquez pour un voyage à la découverte des mystères fascinants des planètes du système solaire.
                         De la géante gazeuse Jupiter à la petite Mercure brûlante, en passant par les anneaux majestueux
@@ -50,25 +50,36 @@
 
                 <img id="smoke" src="">
             </div>
+
             <div id="ciel" class="section">
                 <img class="nuage" id="nuageLeft" src="./src/img/cloud1.svg" alt="">
                 <img class="nuage" id="nuageRight" src="./src/img/cloud2.svg" alt="">
-                <dotlottie-player id="oiseaux" src="https://lottie.host/6ecae8c9-4a80-48da-8bfc-5bcdade7810c/Uhgf6SAFIT.lottie"
-                background="transparent" speed="1" loop
-                autoplay></dotlottie-player>
+                <dotlottie-player id="oiseaux"
+                    src="https://lottie.host/6ecae8c9-4a80-48da-8bfc-5bcdade7810c/Uhgf6SAFIT.lottie"
+                    background="transparent" speed="1" loop autoplay></dotlottie-player>
             </div>
+
             <div id="tesla" class="section">
-                <dotlottie-player id="teslavoiture" src="https://lottie.host/47b22123-bbe1-469a-9941-a9c9b84b4074/4BxPqCEFYU.lottie"
-                background="transparent" speed="1" loop
-                autoplay></dotlottie-player>
-                <p>La Tesla Roadster, lancée dans l’espace en 2018 par SpaceX, voyage parmi les étoiles comme une
-                    "voiture de l’espace", avec un mannequin nommé Starman au volant et une vue spectaculaire sur la
-                    Terre (du moins au début). C’est un symbole amusant et surprenant de l’exploration spatiale moderne
-                    !</p>
+                <dotlottie-player id="teslavoiture"
+                    src="https://lottie.host/47b22123-bbe1-469a-9941-a9c9b84b4074/4BxPqCEFYU.lottie"
+                    background="transparent" speed="1" loop autoplay></dotlottie-player>
+                <div class="textContainer txtR">
+                    <h2 class="exo2">La Tesla</h2>
+                    <p>La Tesla Roadster, lancée dans l’espace en 2018 par SpaceX, voyage parmi les étoiles comme une
+                        "voiture de l’espace", avec un mannequin nommé Starman au volant et une vue spectaculaire sur la
+                        Terre (du moins au début). C’est un symbole amusant et surprenant de l’exploration spatiale
+                        moderne
+                        !</p>
+                </div>
             </div>
-            <div id="soleil" class="section">
-                <img src="./src/img/soleil.svg" alt="soleil">
-                <div>
+
+            <div id="soleil" class="section plCont">
+                <img class="bgStars" src="./src/img/starBg1.svg">
+
+                <img class="planet txtL" src="./src/img/soleil.svg" alt="soleil">
+                
+                <div class="textContainer txtR">
+                    <h2 class="exo2">Le soleil</h2>
                     <p>Le Soleil est l’étoile au cœur de notre système solaire. C’est une énorme boule de gaz brûlant,
                         principalement de l’hydrogène et de l’hélium. Sa chaleur et sa lumière rendent la vie possible
                         sur Terre. Il est si grand qu’on pourrait mettre plus d’un million de Terres à l’intérieur ! Le
@@ -76,8 +87,158 @@
                         appelé fusion. Sans lui, il n’y aurait ni lumière, ni chaleur, ni vie.</p>
                 </div>
             </div>
-            <div class="section" style="background-color: lawngreen;">
 
+            <div id="mercure" class="section plContOdd">
+                <img class="bgStars" src="./src/img/starBg2.svg">
+
+                <img class="planet txtR" src="./src/img/mercure.svg" alt="mercure">
+
+                <div class="textContainer txtL">
+                    <h2 class="exo2">Mercure</h2>
+                    <p>
+                        Mercure est la plus petite planète du système solaire et aussi la plus proche du Soleil. Elle
+                        est un peu comme une boule de roche grise remplie de cratères, un peu comme la Lune. Comme elle
+                        est
+                        si proche du Soleil, la journée y est très chaude, atteignant jusqu’à 427°C, mais la nuit, il
+                        fait extrêmement froid, jusqu’à -173°C ! Mercure n’a presque pas d’atmosphère, donc aucun nuage
+                        ni vent pour protéger sa surface.
+                    </p>
+                </div>
+            </div>
+
+            <div id="venus" class="section plCont">
+                <img class="bgStars" src="./src/img/starBg1.svg">
+
+                <img class="planet txtL" src="./src/img/venus.svg" alt="venus">
+
+                <div class="textContainer txtR">
+                    <h2 class="exo2">Venus</h2>
+                    <p>
+                        Vénus est souvent appelée la "sœur" de la Terre parce qu’elle a presque la même
+                        taille. Mais attention, Vénus est très différente ! Elle est enveloppée dans une épaisse couche
+                        de nuages toxiques qui emprisonnent la chaleur, ce qui en fait la planète la plus chaude du
+                        système
+                        solaire, avec une température de 462°C. Sur Vénus, un jour dure plus longtemps qu’une année, car
+                        elle tourne très lentement sur elle-même. Et en plus, elle tourne "à l’envers" par rapport aux
+                        autres planètes !
+                    </p>
+                </div>
+            </div>
+
+            <div id="terre" class="section plContOdd">
+                <img class="bgStars" src="./src/img/starBg2.svg">
+
+                <img class="planet txtR" src="./src/img/terre.svg" alt="terre">
+
+                <div class="textContainer txtL">
+                    <h2 class="exo2">Terre</h2>
+                    <p>
+                        Notre planète, la Terre, est la seule connue où la vie existe. Elle a tout ce qu’il faut pour
+                        nous : de l’eau liquide, de l’air que nous pouvons respirer, et une température agréable. La
+                        Terre est recouverte d’océans, de forêts, de déserts et de montagnes. Elle tourne sur elle-même
+                        en 24 heures, ce qui fait alterner le jour et la nuit, et elle fait le tour du Soleil en 365
+                        jours, ce qui donne les saisons.
+                    </p>
+                </div>
+            </div>
+
+            <div id="lune" class="section plCont">
+                <img class="bgStars" src="./src/img/starBg1.svg">
+
+                <img class="planet txtL" src="./src/img/lune.svg" alt="lune">
+
+                <div class="textContainer txtR">
+                    <h2 class="exo2">Lune</h2>
+                    <p>
+                        La Lune est le seul satellite naturel de la Terre. C’est une boule de roche grise
+                        pleine de cratères. Elle tourne autour de la Terre en environ 28 jours, ce qui crée les phases de la Lune
+                        : pleine Lune, premier quartier, dernier quartier, etc. La gravité de la Lune est bien plus
+                        faible que celle de la Terre, donc si tu pouvais sauter là-bas, tu irais beaucoup plus haut !
+                        Les astronautes y ont marché pour la première fois en 1969, lors de la mission Apollo 11.
+                    </p>
+                </div>
+            </div>
+
+            <div id="mars" class="section plContOdd">
+                <img class="bgStars" src="./src/img/starBg2.svg">
+
+                <img class="planet txtR" src="./src/img/mars.svg" alt="mars">
+
+                <div class="textContainer txtL">
+                    <h2 class="exo2">Mars</h2>
+                    <p>
+                        Mars est souvent appelée la "planète rouge" à cause de sa couleur rouille, qui vient de la
+                        poussière de fer qui recouvre sa surface. C’est une planète froide et sèche, avec des
+                        températures moyennes de -63°C. Mars a les plus grandes montagnes du système solaire, comme
+                        Olympus Mons, un volcan trois fois plus haut que l’Everest ! Les scientifiques rêvent d’y
+                        envoyer des humains un jour, car elle pourrait être une deuxième maison pour nous.
+                    </p>
+                </div>
+            </div>
+
+            <div id="jupiter" class="section plCont">
+                <img class="bgStars" src="./src/img/starBg1.svg">
+
+                <img class="planet txtL" src="./src/img/jupiter.svg" alt="jupiter">
+
+                <div class="textContainer txtR">
+                    <h2 class="exo2">Jupiter</h2>
+                    <p>
+                        Jupiter est la plus grosse planète du système solaire, une véritable géante faite
+                        principalement de gaz. Si grande qu’elle pourrait contenir plus de 1 300 Terres ! Jupiter est célèbre pour sa
+                        Grande Tache Rouge, une énorme tempête qui dure depuis des siècles. Elle a aussi plus de 80
+                        lunes, dont certaines, comme Europa, pourraient cacher des océans sous leur surface glacée.
+                    </p>
+                </div>
+            </div>
+
+            <div id="saturne" class="section plContOdd">
+                <img class="bgStars" src="./src/img/starBg2.svg">
+
+                <img class="planet txtR" src="./src/img/saturne.svg" alt="saturne">
+
+                <div class="textContainer txtL">
+                    <h2 class="exo2">Saturne</h2>
+                    <p>
+                        Saturne est sans doute la plus belle planète du système solaire grâce à ses magnifiques anneaux.
+                        Ces anneaux ne sont pas solides, mais faits de milliards de morceaux de glace et de roche.
+                        Saturne est aussi une planète géante gazeuse, comme Jupiter. Elle a un grand nombre de lunes,
+                        dont Titan, qui est si grande qu’elle est plus grande que Mercure !
+                    </p>
+                </div>
+            </div>
+
+            <div id="uranus" class="section plCont">
+                <img class="bgStars" src="./src/img/starBg1.svg">
+                
+                <img class="planet txtL" src="./src/img/uranus.svg" alt="uranus">
+
+                <div class="textContainer txtR">
+                    <h2 class="exo2">Uranus</h2>
+                    <p>
+                        Uranus est une planète glacée d’une belle couleur bleu-vert à cause du méthane
+                        dans son atmosphère. Elle est unique parce qu’elle est couchée sur le côté, comme si elle roulait autour
+                        du Soleil au lieu de tourner "debout". Elle est très froide, avec des températures qui
+                        descendent jusqu’à -195°C. Uranus est aussi entourée d’anneaux, mais ils sont beaucoup plus
+                        discrets que ceux de Saturne.
+                    </p>
+                </div>
+            </div>
+
+            <div id="neptune" class="section plContOdd">
+                <img class="bgStars" src="./src/img/starBg2.svg">
+
+                <img class="planet txtR" src="./src/img/neptune.svg" alt="neptune">
+
+                <div class="textContainer txtL">
+                    <h2 class="exo2">Neptune</h2>
+                    <p>
+                        Neptune est la planète la plus éloignée du Soleil. C’est une géante glacée de couleur bleu foncé,
+                        à cause de son atmosphère riche en méthane. Neptune est connue pour ses vents incroyablement
+                        forts, qui soufflent plus vite que le son ! Elle a aussi des anneaux fins et plusieurs lunes,
+                        comme Triton, qui est une des lunes les plus étranges du système solaire.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
