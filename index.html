@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
 
     <!-- Import du style et du JS -->
 
@@ -27,6 +28,11 @@
         <div class="flex wrapper">
             <div class="vr hfull flex solstatic">
                 <p class="count"></p>
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/eb924371-600b-4dcf-8b4b-1769aa7d4da3/5N1xvNSJ3S.lottie"
+                    background="transparent" speed="1" style="width: 300px; height: 300px" loop
+                    autoplay></dotlottie-player>
             </div>
             <div class="vr hfull flex ciel">
                 <img src="./src/img/nuage-1.svg" alt="" class="nuage nuageleft">
