@@ -42,7 +42,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 1.2;
         return `${screenHeightTimesThree}px top`;
-      }
+      },
+      end: () => {
+        const screenHeightTimesThree = window.innerWidth * 0.8;
+        return `${screenHeightTimesThree}px 40%`;
+      },
+      toggleAction: "restart reverse play reverse",
+      scrub: 1.5,
     }
   });
 
@@ -56,7 +62,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 1.2;
         return `${screenHeightTimesThree}px top`;
-      }
+      },
+      end: () => {
+        const screenHeightTimesThree = window.innerWidth * 0.8;
+        return `${screenHeightTimesThree}px 40%`;
+      },
+      toggleAction: "restart reverse play reverse",
+      scrub: 1.5,
     }
   });
 
@@ -75,21 +87,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  oiseauxTl.fromTo('#oiseaux', {  x: -1200, y: 400 }, {duration: 2, x: 1500, y: -400 })
+  oiseauxTl.fromTo('#oiseaux', { x: -1200, y: 400 }, { duration: 2, x: 1500, y: -400 })
 
   // Tesla quand on arrive dans l'atmosphere
 
   const teslaTl = gsap.timeline({
     scrollTrigger: {
       trigger: '#tesla',
-      markers: true,
+      // markers: true,
       start: () => {
-        const screenHeightTimesThree = window.innerHeight * 2.5;
+        const screenHeightTimesThree = window.innerHeight * 2.4;
         return `${screenHeightTimesThree}px top`;
-      }
+      },
+      end: () => {
+        const screenHeightTimesThree = window.innerWidth * 1.5;
+        return `${screenHeightTimesThree}px 40%`;
+      },
+      toggleAction: "restart reverse play reverse",
+      scrub: 1.5,
     }
   });
 
-  teslaTl.fromTo('#teslavoiture', {  x: 0, y: 0, rotation: 0 }, {duration: 2, x: -1000, y: 0, rotation: 360 })
+  teslaTl.fromTo('#teslavoiture', { x: 0, y: 0, rotation: 0 }, { duration: 5, x: -1000, y: 0, rotation: 360 })
 
 });
