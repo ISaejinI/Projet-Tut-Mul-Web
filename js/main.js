@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const oiseauxTl = gsap.timeline({
     scrollTrigger: {
       trigger: '#ciel',
-      markers: true,
+      // markers: true,
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 1.2;
         return `${screenHeightTimesThree}px top`;
@@ -76,5 +76,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   oiseauxTl.fromTo('#oiseaux', {  x: -1200, y: 400 }, {duration: 2, x: 1500, y: -400 })
+
+  // Tesla quand on arrive dans l'atmosphere
+
+  const teslaTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#tesla',
+      markers: true,
+      start: () => {
+        const screenHeightTimesThree = window.innerHeight * 2.5;
+        return `${screenHeightTimesThree}px top`;
+      }
+    }
+  });
+
+  teslaTl.fromTo('#teslavoiture', {  x: 0, y: 0, rotation: 0 }, {duration: 2, x: -1000, y: 0, rotation: 360 })
 
 });
