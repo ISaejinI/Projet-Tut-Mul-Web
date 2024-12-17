@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: '#ciel',
       // markers: true,
       start: () => {
-        const screenHeightTimesThree = window.innerHeight * 1.2;
-        return `${screenHeightTimesThree}px top`;
+        const screenHeightTimesThree = window.innerHeight * 1.7;
+        return `${screenHeightTimesThree}px 65%`;
       }
     }
   });
@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: '#ciel',
       // markers: true,
       start: () => {
-        const screenHeightTimesThree = window.innerHeight * 1.2;
-        return `${screenHeightTimesThree}px top`;
+        const screenHeightTimesThree = window.innerHeight * 1.7;
+        return `${screenHeightTimesThree}px 65%`;
       }
     }
   });
@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: '#ciel',
       // markers: true,
       start: () => {
-        const screenHeightTimesThree = window.innerHeight * 1.2;
-        return `${screenHeightTimesThree}px top`;
+        const screenHeightTimesThree = window.innerHeight * 1.7;
+        return `${screenHeightTimesThree}px 65%`;
       }
     }
   });
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: '#tesla',
       markers: true,
       start: () => {
-        const screenHeightTimesThree = window.innerHeight * 2.5;
+        const screenHeightTimesThree = window.innerHeight * 2.15;
         return `${screenHeightTimesThree}px top`;
       }
     }

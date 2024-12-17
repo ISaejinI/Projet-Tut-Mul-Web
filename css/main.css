@@ -76,24 +76,20 @@ body {
 }
 
 .textContainer {
-    width: 350px;
+    width: 400px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 32px;
     padding: 25px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #sol {
     background-image: linear-gradient(to top, #d6e8ee, #97cadb);
     position: relative;
     justify-content: flex-start;
-
-    .textContainer {
-        margin-left: 150px;
-    }
 
     #numberContainer {
         background: grey;
@@ -125,9 +121,9 @@ body {
         text-decoration: none;
         box-shadow: 0 0 0;
         transition: all 200ms;
-        cursor: pointer; 
+        cursor: pointer;
     }
-    
+
     #launchButton:hover {
         transform: translateY(-10px);
         box-shadow: 0px 12px 1px var(--noir);
@@ -150,7 +146,8 @@ body {
 
 #ciel {
     background-image: linear-gradient(to top, #97cadb, #018abe);
-    #oiseaux{
+
+    #oiseaux {
         width: 500px;
         height: 500px;
         position: fixed;
@@ -164,29 +161,76 @@ body {
     flex-direction: column;
     align-items: end;
     gap: 10%;
-    #teslavoiture{
+
+    #teslavoiture {
         width: 30%;
         height: 300px;
         margin-right: 200px;
     }
-    p{
-        width: 30%;
-        margin-right: 200px;
-        color: white;
+    .textContainer {
+        color: var(--blanc);
+        font-size: 20px;
+
+        h2 {
+            color: var(--jaune);
+            font-size: 50px;
+            margin-top: 0;
+        }
     }
 }
 
-#soleil {
-    background-image: linear-gradient(to top, #018abe, #02457a);
+.txtR {
+    margin-right: 150px;
+}
+
+.txtL {
+    margin-left: 150px;
+}
+
+.planet {
+    width: 600px;
+}
+
+.plCont {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(to top, #02457a, #018abe);
 
-    img {
-        width: 350px;
-    }
+    .textContainer {
+        color: var(--blanc);
+        font-size: 20px;
 
-    div {
-        width: 350px;
+        h2 {
+            color: var(--jaune);
+            font-size: 50px;
+            margin-top: 0;
+        }
     }
+}
+
+.plContOdd {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, #018abe, #02457a);
+
+    .textContainer {
+        color: var(--blanc);
+        font-size: 20px;
+
+        h2 {
+            color: var(--jaune);
+            font-size: 50px;
+            margin-top: 0;
+        }
+    }
+}
+
+.bgStars {
+    position: fixed;
+    width: 150%;
+    height: 150%;
+    z-index: -1;
 }
