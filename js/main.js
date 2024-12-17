@@ -16,28 +16,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   const countdownTl = gsap.timeline();
 
-  countdownTl.to("#nb3", {
-    delay:1,
-    display: "none",
-  })
-  countdownTl.to("#nb2", {
-    display: "block",
-  })
-  countdownTl.to("#nb2", {
-    delay:1,
-    display: "none",
-  })
-  countdownTl.to("#nb1", {
-    display: "block",
-  })
-  countdownTl.to("#nb1", {
-    delay:1,
-    display: "none",
-  })
-  countdownTl.to("#nb0", {
-    display: "block",
-  })
-  
+  countdownTl.to("#nb3", { delay: 1, display: "none" })
+    .to("#nb2", { display: "block" })
+    .to("#nb2", { delay: 1, display: "none" })
+    .to("#nb1", { display: "block" })
+    .to("#nb1", { delay: 1, display: "none" })
+    .to("#nb0", { display: "block" })
+
 
   gsap.to("#fusee", {
     y: -50,
