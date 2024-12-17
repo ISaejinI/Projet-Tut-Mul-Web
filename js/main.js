@@ -42,7 +42,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 1.7;
         return `${screenHeightTimesThree}px 65%`;
-      }
+      },
+      end: () => {
+        const screenHeightTimesThree = window.innerWidth * 0.6;
+        return `${screenHeightTimesThree}px 40%`;
+      },
+      toggleAction: "restart reverse play reverse",
+      scrub: 1.5,
     }
   });
 
@@ -56,7 +62,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 1.7;
         return `${screenHeightTimesThree}px 65%`;
-      }
+      },
+      end: () => {
+        const screenHeightTimesThree = window.innerWidth * 0.6;
+        return `${screenHeightTimesThree}px 40%`;
+      },
+      toggleAction: "restart reverse play reverse",
+      scrub: 1.5,
     }
   });
 
@@ -82,11 +94,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const teslaTl = gsap.timeline({
     scrollTrigger: {
       trigger: '#tesla',
-      markers: true,
+      // markers: true,
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 2.15;
         return `${screenHeightTimesThree}px top`;
-      }
+      },
+      end: () => {
+        const screenHeightTimesThree = window.innerWidth * 1.275;
+        return `${screenHeightTimesThree}px 40%`;
+      },
+      toggleAction: "restart reverse play reverse",
+      scrub: 1.5,
     }
   });
 
