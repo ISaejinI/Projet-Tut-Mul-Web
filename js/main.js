@@ -34,4 +34,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
       .to("#fusee", { opacity: 0 })
   })
 
+  // Déplace les nuages
+  const nuageTl1 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#ciel',
+      // markers: true,
+      start: () => {
+        const screenHeightTimesThree = window.innerHeight * 1;
+        return `${screenHeightTimesThree}px top`;
+      }
+    }
+  });
+
+  nuageTl1.fromTo('#nuageLeft', { x: 0 }, { x: -200 })
+
+  // Nuage Gauche quand on arrive au ciel
+  const nuageTl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#ciel',
+      markers: true,
+      start: () => {
+        const screenHeightTimesThree = window.innerHeight * 1;
+        return `${screenHeightTimesThree}px top`;
+      }
+    }
+  });
+
+  nuageTl2.fromTo('#nuageRight', { x: 0 }, { x: 200 })
+
 });
