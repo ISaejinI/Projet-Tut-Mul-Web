@@ -29,9 +29,9 @@ body {
     position: fixed;
     bottom: 0;
     right: 50%;
-    transform: translate(-50% 0);
+    transform: translate(50%);
     z-index: 10;
-    height: 250px;
+    height: 350px;
 }
 
 .verticalReverse {
@@ -69,14 +69,13 @@ body {
 
 #soleil {
     background-image: linear-gradient(to top,#018abe, #02457a);
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     img {
         width: 350px;
     };
     div {
-        position: absolute;
-        bottom: 100px;
-        right: 150px;
         width: 350px;
     }
 }
