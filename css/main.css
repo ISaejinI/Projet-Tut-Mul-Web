@@ -62,7 +62,7 @@ body {
         bottom: -25px;
     }
     50% {
-        bottom: 75px;
+        bottom: 175px;
     }
     100% {
         bottom: -25px;
@@ -274,6 +274,19 @@ body {
     height: 500px;
     transform: translateY(25%);
     left: 5%;
+    animation: rotateIss 20s infinite ease-in-out;
+}
+
+@keyframes rotateIss {
+    0% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
 }
 
 #ovni{

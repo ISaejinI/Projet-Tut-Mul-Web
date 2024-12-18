@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // Permet de ralentir le scroll
-  window.addEventListener("wheel", function(event) {
+  window.addEventListener("wheel", function (event) {
     event.preventDefault();
     let scrollAmount = event.deltaY * 0.3; // Réduit la vitesse en multipliant par 0.3
     window.scrollBy(0, scrollAmount); // Scroll verticalement selon ce nouveau montant
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  oiseauxTl.fromTo('#oiseaux', {  x: -1200, y: 400 }, {duration: 2, x: 1500, y: -400 })
+  oiseauxTl.fromTo('#oiseaux', { x: -1200, y: 400 }, { duration: 2, x: 1500, y: -400 })
 
   // Tesla quand on arrive dans l'atmosphere
 
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  teslaTl.fromTo('#teslavoiture', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: -1000, y: 0, rotation: 360 })
+  teslaTl.fromTo('#teslavoiture', { x: 0, y: 0, rotation: 0 }, { duration: 5, x: -1000, y: 0, rotation: 360 })
 
   // Animation planète1
   const planet1Tl = gsap.timeline({
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet1Tl.fromTo('.planet1', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
+  planet1Tl.fromTo('.planet1', { x: -50, y: 0, rotation: 0 }, { duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars1
   const bgstars1Tl = gsap.timeline({
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars1Tl.fromTo('.bgStars1', {  x: 0, y: 0}, {duration: 5, x: -50, y: 0})
+  bgstars1Tl.fromTo('.bgStars1', { x: 0, y: 0 }, { duration: 5, x: -50, y: 0 })
 
   // Animation planète2
   const planet2Tl = gsap.timeline({
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet2Tl.fromTo('.planet2', {  x: 50, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
+  planet2Tl.fromTo('.planet2', { x: 50, y: 0, rotation: 0 }, { duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars2
   const bgstars2Tl = gsap.timeline({
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars2Tl.fromTo('.bgStars2', {  x: 0, y: 0}, {duration: 5, x: 50, y: 0})
+  bgstars2Tl.fromTo('.bgStars2', { x: 0, y: 0 }, { duration: 5, x: 50, y: 0 })
 
   // Animation planète3
   const planet3Tl = gsap.timeline({
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet3Tl.fromTo('.planet3', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
+  planet3Tl.fromTo('.planet3', { x: -50, y: 0, rotation: 0 }, { duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars3
   const bgstars3Tl = gsap.timeline({
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars3Tl.fromTo('.bgStars3', {  x: 0, y: 0}, {duration: 5, x: -50, y: 0})
+  bgstars3Tl.fromTo('.bgStars3', { x: 0, y: 0 }, { duration: 5, x: -50, y: 0 })
 
   // Animation planète4
   const planet4Tl = gsap.timeline({
@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet4Tl.fromTo('.planet4', {  x: 50, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
+  planet4Tl.fromTo('.planet4', { x: 50, y: 0, rotation: 0 }, { duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars4
   const bgstars4Tl = gsap.timeline({
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars4Tl.fromTo('.bgStars4', {  x: 0, y: 0}, {duration: 5, x: 50, y: 0})
+  bgstars4Tl.fromTo('.bgStars4', { x: 0, y: 0 }, { duration: 5, x: 50, y: 0 })
 
   // Animation planète5
   const planet5Tl = gsap.timeline({
@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet5Tl.fromTo('.planet5', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
+  planet5Tl.fromTo('.planet5', { x: -50, y: 0, rotation: 0 }, { duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars5
   const bgstars5Tl = gsap.timeline({
@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars5Tl.fromTo('.bgStars5', {  x: 0, y: 0}, {duration: 5, x: -50, y: 0})
+  bgstars5Tl.fromTo('.bgStars5', { x: 0, y: 0 }, { duration: 5, x: -50, y: 0 })
 
   // Animation planète6
   const planet6Tl = gsap.timeline({
@@ -336,7 +336,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet6Tl.fromTo('.planet6', {  x: 50, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
+  planet6Tl.fromTo('.planet6', { x: 50, y: 0, rotation: 0 }, { duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars6
   const bgstars6Tl = gsap.timeline({
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars6Tl.fromTo('.bgStars6', {  x: 0, y: 0}, {duration: 5, x: 50, y: 0})
+  bgstars6Tl.fromTo('.bgStars6', { x: 0, y: 0 }, { duration: 5, x: 50, y: 0 })
 
   // Animation planète7
   const planet7Tl = gsap.timeline({
@@ -376,7 +376,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet7Tl.fromTo('.planet7', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
+  planet7Tl.fromTo('.planet7', { x: -50, y: 0, rotation: 0 }, { duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars7
   const bgstars7Tl = gsap.timeline({
@@ -396,7 +396,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars7Tl.fromTo('.bgStars7', {  x: 0, y: 0}, {duration: 5, x: -50, y: 0})
+  bgstars7Tl.fromTo('.bgStars7', { x: 0, y: 0 }, { duration: 5, x: -50, y: 0 })
 
   // Animation planète8
   const planet8Tl = gsap.timeline({
@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet8Tl.fromTo('.planet8', {  x: 50, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
+  planet8Tl.fromTo('.planet8', { x: 50, y: 0, rotation: 0 }, { duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars8
   const bgstars8Tl = gsap.timeline({
@@ -436,7 +436,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars8Tl.fromTo('.bgStars8', {  x: 0, y: 0}, {duration: 5, x: 50, y: 0})
+  bgstars8Tl.fromTo('.bgStars8', { x: 0, y: 0 }, { duration: 5, x: 50, y: 0 })
 
   // Animation planète9
   const planet9Tl = gsap.timeline({
@@ -456,7 +456,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet9Tl.fromTo('.planet9', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
+  planet9Tl.fromTo('.planet9', { x: -50, y: 0, rotation: 0 }, { duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars9
   const bgstars9Tl = gsap.timeline({
@@ -476,7 +476,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars9Tl.fromTo('.bgStars9', {  x: 0, y: 0}, {duration: 5, x: -50, y: 0})
+  bgstars9Tl.fromTo('.bgStars9', { x: 0, y: 0 }, { duration: 5, x: -50, y: 0 })
 
   // Animation planète10
   const planet10Tl = gsap.timeline({
@@ -496,7 +496,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet10Tl.fromTo('.planet10', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
+  planet10Tl.fromTo('.planet10', { x: 0, y: 0, rotation: 0 }, { duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars10
   const bgstars10Tl = gsap.timeline({
@@ -516,7 +516,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  bgstars10Tl.fromTo('.bgStars10', {  x: 0, y: 0}, {duration: 5, x: 50, y: 0})
+  bgstars10Tl.fromTo('.bgStars10', { x: 0, y: 0 }, { duration: 5, x: 50, y: 0 })
 
   // Météorite
   const meteoriteTl = gsap.timeline({
@@ -530,13 +530,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  meteoriteTl.fromTo('#meteorite', {  x: -1200, y: -400 }, {duration: 10, x: 300, y: 0 })
+  meteoriteTl.fromTo('#meteorite', { x: -1200, y: -400 }, { duration: 10, x: 300, y: 0 })
 
   // Ovni
   const ovniTl = gsap.timeline({
     scrollTrigger: {
       trigger: '#mars',
-      markers: true,
+      // markers: true,
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 8.65;
         return `${screenHeightTimesThree}px top`;
@@ -544,13 +544,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  ovniTl.fromTo('#ovni', {  x: 0, y: 0 }, {duration: 10, x: -1500, y: -200 })
+  ovniTl.fromTo('#ovni', { x: 0, y: 0 }, { duration: 10, x: -1500, y: -200 })
 
   // Astronaute
   const astronauteTl = gsap.timeline({
     scrollTrigger: {
       trigger: '#saturne',
-      markers: true,
+      // markers: true,
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 10.82;
         return `${screenHeightTimesThree}px top`;
@@ -558,5 +558,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  astronauteTl.fromTo('#astronaute', {  x: 300, y: 200 }, {duration: 10, x: -2500, y: 0 })
+  astronauteTl.fromTo('#astronaute', { x: 300, y: 200 }, { duration: 10, x: -2500, y: 0 })
+
+  // Son décollage
+  document.getElementById('launchButton').addEventListener('click', function () {
+    var audio = document.getElementById('son_decolage');
+    audio.play();
+  });
 });
