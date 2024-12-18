@@ -168,7 +168,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 10%;
+    gap: 0;
+    z-index: 5;
 
     #teslavoiture {
         width: 30%;
@@ -197,6 +198,7 @@ body {
 
 .planet {
     width: 600px;
+    filter: drop-shadow(0 40px 20px rgba(0, 0, 0, 0.3));
 }
 
 .plCont {
