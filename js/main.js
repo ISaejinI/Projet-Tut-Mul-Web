@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     scrollTrigger: {
       trigger: ".verticalReverse",
       pin: true,
+      snap: 1 / (vrSections.length - 1),
       scrub: 1.5,
       start: "top top",
       end: "bottom top"
@@ -481,7 +482,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const planet10Tl = gsap.timeline({
     scrollTrigger: {
       trigger: '#neptune',
-      markers: true,
+      // markers: true,
       start: () => {
         const screenHeightTimesThree = window.innerHeight * 12.99;
         return `${screenHeightTimesThree}px top`;
