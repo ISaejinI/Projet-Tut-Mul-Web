@@ -302,3 +302,25 @@ body {
     width: 300px;
     height: 300px;
 }
+
+#lastFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--jaune);
+    font-size: 45px;
+    text-align: center;
+    /* display: none; */
+}
+
+#mentions {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    font-size: 16px;
+    text-align: end;
+    color: var(--noir);
+    p {
+        margin: 0;
+    }
+}
