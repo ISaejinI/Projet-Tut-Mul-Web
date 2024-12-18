@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet1Tl.fromTo('.planet1', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: 75, y: 0, rotation: 45 })
+  planet1Tl.fromTo('.planet1', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars1
   const bgstars1Tl = gsap.timeline({
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet2Tl.fromTo('.planet2', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: -75, y: 0, rotation: 45 })
+  planet2Tl.fromTo('.planet2', {  x: 50, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars2
   const bgstars2Tl = gsap.timeline({
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet3Tl.fromTo('.planet3', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: 75, y: 0, rotation: 45 })
+  planet3Tl.fromTo('.planet3', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars3
   const bgstars3Tl = gsap.timeline({
@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet4Tl.fromTo('.planet4', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: -75, y: 0, rotation: 45 })
+  planet4Tl.fromTo('.planet4', {  x: 50, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars4
   const bgstars4Tl = gsap.timeline({
@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet5Tl.fromTo('.planet5', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: 75, y: 0, rotation: 45 })
+  planet5Tl.fromTo('.planet5', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars5
   const bgstars5Tl = gsap.timeline({
@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet6Tl.fromTo('.planet6', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: -75, y: 0, rotation: 45 })
+  planet6Tl.fromTo('.planet6', {  x: 50, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars6
   const bgstars6Tl = gsap.timeline({
@@ -375,7 +375,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet7Tl.fromTo('.planet7', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: 75, y: 0, rotation: 45 })
+  planet7Tl.fromTo('.planet7', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars7
   const bgstars7Tl = gsap.timeline({
@@ -415,7 +415,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet8Tl.fromTo('.planet8', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: -75, y: 0, rotation: 45 })
+  planet8Tl.fromTo('.planet8', {  x: 50, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars8
   const bgstars8Tl = gsap.timeline({
@@ -455,7 +455,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet9Tl.fromTo('.planet9', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: 75, y: 0, rotation: 45 })
+  planet9Tl.fromTo('.planet9', {  x: -50, y: 0, rotation: 0 }, {duration: 5, x: 50, y: 0, rotation: 45 })
 
   // Animation bstars9
   const bgstars9Tl = gsap.timeline({
@@ -495,7 +495,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  planet10Tl.fromTo('.planet10', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: -75, y: 0, rotation: 45 })
+  planet10Tl.fromTo('.planet10', {  x: 0, y: 0, rotation: 0 }, {duration: 5, x: -50, y: 0, rotation: 45 })
 
   // Animation bstars10
   const bgstars10Tl = gsap.timeline({
