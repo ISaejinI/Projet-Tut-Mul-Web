@@ -545,4 +545,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   ovniTl.fromTo('#ovni', {  x: 0, y: 0 }, {duration: 10, x: -1500, y: -200 })
+
+  // Astronaute
+  const astronauteTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#saturne',
+      markers: true,
+      start: () => {
+        const screenHeightTimesThree = window.innerHeight * 10.82;
+        return `${screenHeightTimesThree}px top`;
+      }
+    }
+  });
+
+  astronauteTl.fromTo('#astronaute', {  x: 300, y: 200 }, {duration: 10, x: -2500, y: 0 })
 });
