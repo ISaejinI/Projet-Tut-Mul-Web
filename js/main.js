@@ -517,4 +517,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   bgstars10Tl.fromTo('.bgStars10', {  x: 0, y: 0}, {duration: 5, x: 50, y: 0})
+
+  // Météorite
+  const meteoriteTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#mercure',
+      // markers: true,
+      start: () => {
+        const screenHeightTimesThree = window.innerHeight * 4.325;
+        return `${screenHeightTimesThree}px top`;
+      }
+    }
+  });
+
+  meteoriteTl.fromTo('#meteorite', {  x: -1200, y: -400 }, {duration: 10, x: 300, y: 0 })
+
+  // Ovni
+  const ovniTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#mercure',
+      // markers: true,
+      start: () => {
+        const screenHeightTimesThree = window.innerHeight * 4.325;
+        return `${screenHeightTimesThree}px top`;
+      }
+    }
+  });
+
+  ovniTl.fromTo('#ovni', {  x: -1200, y: -400 }, {duration: 10, x: 300, y: 0 })
 });
