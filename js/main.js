@@ -9,11 +9,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     scrollTrigger: {
       trigger: ".verticalReverse",
       pin: true,
-      scrub: 1,
+      scrub: 1.5,
       start: "top top",
       end: "bottom top"
     }
   });
+
+  // Permet de ralentir le scroll
+  window.addEventListener("wheel", function(event) {
+    event.preventDefault();
+    let scrollAmount = event.deltaY * 0.3; // Réduit la vitesse en multipliant par 0.3
+    window.scrollBy(0, scrollAmount); // Scroll verticalement selon ce nouveau montant
+  }, { passive: false });
 
   // Lance le décompte et affiche la fusée annimée
   const launchButton = document.getElementById('launchButton');
