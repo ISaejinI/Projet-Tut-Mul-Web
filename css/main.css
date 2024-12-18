@@ -15,6 +15,7 @@ body {
     font-style: normal;
     margin: 0;
     color: var(--noir);
+    background-color: #02457a;
 }
 
 .exo2 {
@@ -31,6 +32,7 @@ body {
     font-style: normal;
     font-size: 100px;
     margin: 0;
+    color: var(--noir);
 }
 
 #fusee {
@@ -97,16 +99,17 @@ body {
     justify-content: flex-start;
 
     #numberContainer {
-        background: grey;
+        background: var(--blanc);
         padding: 6px 0;
         width: 150px;
-        border: 10px solid;
+        border: 10px solid var(--jaune);
         text-align: center;
         border-radius: 25px;
         position: absolute;
         top: 5%;
         left: 50%;
         transform: translate(-50%, 50%);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     }
 
     #town {
