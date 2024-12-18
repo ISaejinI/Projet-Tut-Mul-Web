@@ -535,14 +535,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // Ovni
   const ovniTl = gsap.timeline({
     scrollTrigger: {
-      trigger: '#mercure',
-      // markers: true,
+      trigger: '#mars',
+      markers: true,
       start: () => {
-        const screenHeightTimesThree = window.innerHeight * 4.325;
+        const screenHeightTimesThree = window.innerHeight * 8.65;
         return `${screenHeightTimesThree}px top`;
       }
     }
   });
 
-  ovniTl.fromTo('#ovni', {  x: -1200, y: -400 }, {duration: 10, x: 300, y: 0 })
+  ovniTl.fromTo('#ovni', {  x: 0, y: 0 }, {duration: 10, x: -1500, y: -200 })
 });

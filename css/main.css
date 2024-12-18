@@ -203,15 +203,18 @@ body {
 
 .txtR {
     margin-right: 150px;
+    z-index: 11;
 }
 
 .txtL {
     margin-left: 150px;
+    z-index: 11;
 }
 
 .planet {
     width: 600px;
     filter: drop-shadow(0 40px 20px rgba(0, 0, 0, 0.3));
+    z-index: 5;
 }
 
 .plCont {
@@ -262,7 +265,7 @@ body {
     position: fixed;
     width: 300px;
     height: 300px;
-    z-index: 10;
+    z-index: 11;
 }
 
 #iss{
